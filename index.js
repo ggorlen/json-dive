@@ -85,7 +85,7 @@ const tryToJSON = v => {
 
 const copyToClipboard = text => {
   const ta = document.createElement("textarea");
-  ta.innerText = text;
+  ta.textContent = text;
   document.body.appendChild(ta);
   ta.select();
   document.execCommand("copy");
